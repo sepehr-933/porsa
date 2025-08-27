@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import { AppSidebar } from "@/components/layout/AppSidebar";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 const HomeLayout = ({
   children,
