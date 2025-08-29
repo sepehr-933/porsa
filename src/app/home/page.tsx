@@ -20,7 +20,7 @@ export default function Home() {
       <AiChips />
       <PromptBox />
       <div className="flex flex-col lg:gap-6 lg:flex-row-reverse lg:justify-between lg:max-w-[943px] mx-auto mt-17">
-        <div className="h-[299px] w-[298px] me-6 lg:me-0 mb-5">
+        <div className="h-[299px] w-[298px] mx-auto mb-5">
           <Image src={TwoPhones} alt="Two Phones" width={298} height={299} />
         </div>
         <div className="flex flex-col lg:mx-5 mx-auto gap-5 md:items-center max-w-[318px] lg:max-w-[443px]">

@@ -1,16 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { ReactNode } from "react";
 
+interface WhiteButtonProps {
+  children: ReactNode;
+  className?: string;
+  onClick?: () => void;
+}
+
 export function WhiteButton({
   children,
   className,
-}: Readonly<{
-  children: ReactNode;
-  className?: string;
-}>) {
+  onClick,
+}: Readonly<WhiteButtonProps>) {
   return (
     <div className="flex flex-wrap items-center gap-2 md:flex-row">
-      <Button className={className}>{children}</Button>
+      <Button onClick={onClick} className={className}>
+        {children}
+      </Button>
     </div>
   );
 }

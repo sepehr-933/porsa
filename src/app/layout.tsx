@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { SidebarProvider } from "@/components/lib/shadcn/Sidebar";
 import { AppSidebar } from "@/components/layout/AppSidebar";
+import { GeneralProvider } from "@/contexts/GeneralAppStateContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -61,7 +62,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <body className={YekanBakh.className}>{children}</body>
+      <body className={YekanBakh.className}>
+        <GeneralProvider>{children}</GeneralProvider>
+      </body>
     </html>
   );
 }

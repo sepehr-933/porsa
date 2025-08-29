@@ -160,6 +160,7 @@
 
     /* STATIC SIZES */
     --height-header: 72px;
+    --height-prompt: 118px;
 }
 
 @layer base {

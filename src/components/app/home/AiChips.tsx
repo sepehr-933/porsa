@@ -19,8 +19,6 @@ const AiChips = () => {
           text="Deep search"
         />
       ))}
-      {/* TODO: this is just for test purposes and should be removed soon */}
-      <SidebarTrigger />
     </div>
   );
 };
