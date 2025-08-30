@@ -161,7 +161,10 @@ export function AppSidebar() {
                         {contextMenuItems.map((item, i) => (
                           <>
                             {i === 3 && (
-                              <DropdownMenuSeparator className="bg-gray-800" />
+                              <DropdownMenuSeparator
+                                key={item.id}
+                                className="bg-gray-800"
+                              />
                             )}
                             <DropdownMenuItem
                               key={item.id}
