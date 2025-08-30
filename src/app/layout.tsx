@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { SidebarProvider } from "@/components/lib/shadcn/Sidebar";
-import { AppSidebar } from "@/components/layout/AppSidebar";
 import { GeneralProvider } from "@/contexts/GeneralAppStateContext";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -58,7 +57,7 @@ const YekanBakh = localFont({
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" dir="rtl">

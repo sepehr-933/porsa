@@ -5,7 +5,7 @@ import Gallery from "@/assets/photAi/Gallery.svg";
 import Edit from "@/assets/photAi/Edit.svg";
 import { useGeneralState } from "@/contexts/GeneralAppStateContext";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 
 const PhotoAiHeader = () => {
   const { isSidebarOpen, toggleSidebar } = useGeneralState();

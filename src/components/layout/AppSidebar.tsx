@@ -27,17 +27,15 @@ import IconWrapper from "@/components/common/IconWrapper";
 
 import Logo from "@/assets/Logo.svg";
 import DarkModeSwitch from "@/components/common/DarkSwitch";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/lib/shadcn/Menu";
 import { useMemo, useState } from "react";
-import { useGeneralState } from "@/contexts/GeneralAppStateContext";
 
 // Menu items.
 const items = [
@@ -64,21 +62,6 @@ const items = [
     className: "bg-[#62AD6E14]",
   },
 ];
-
-const SidebarItemsMenu = ({ open }: { open: boolean }) => {
-  return (
-    <DropdownMenu open={true}>
-      <DropdownMenuContent>
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>Profile</DropdownMenuItem>
-        <DropdownMenuItem>Billing</DropdownMenuItem>
-        <DropdownMenuItem>Team</DropdownMenuItem>
-        <DropdownMenuItem>Subscription</DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
-  );
-};
 
 export function AppSidebar() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

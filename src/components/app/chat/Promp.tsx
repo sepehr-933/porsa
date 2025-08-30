@@ -1,14 +1,14 @@
 "use client";
 
 import { ReactNode, useCallback, useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 
 import IconWrapper from "@/components/common/IconWrapper";
 import Gallery from "@/assets/prompIcons/Gallery.svg";
 import Settings from "@/assets/prompIcons/Settings.svg";
 import Microphone from "@/assets/prompIcons/Microphone.svg";
 import Send from "@/assets/prompIcons/Send.svg";
-import LoginModal from "@/components/modal/LoginModal";
+import LoginModal from "@/components/modals/LoginModal";
 
 const IconWithBorder = ({
   children,

@@ -3,6 +3,9 @@ import SemiColon from "@/assets/chat/SemiColon.svg";
 import Photo from "@/assets/chat/Photo.svg";
 import Internet from "@/assets/chat/Internet.svg";
 
+// this component is not used because then we were not able to render the chat without implementing any logic
+// , but you can see the ui by importing it and replace the MessageList.tsx component with it.
+
 const Splash = () => {
   return (
     <>

@@ -6,7 +6,7 @@ import IconWrapper from "@/components/common/IconWrapper";
 import DownArrow from "@/assets/chat/ChevronDown.svg";
 import { useGeneralState } from "@/contexts/GeneralAppStateContext";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 
 const ChatHeader = () => {
   const { isSidebarOpen, toggleSidebar } = useGeneralState();

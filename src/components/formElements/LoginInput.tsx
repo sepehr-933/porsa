@@ -1,7 +1,7 @@
 import WhiteButton from "@/components/lib/shadcn/WhiteButton";
 import IconWrapper from "@/components/common/IconWrapper";
 import RightArrow from "@/assets/login/RightArrow.svg";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 
 interface LoginInputProps {
   buttonClassName?: string;

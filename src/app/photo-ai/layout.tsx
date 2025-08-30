@@ -1,5 +1,7 @@
 "use client";
 
+import { ReactNode } from "react";
+
 import { AppSidebar } from "@/components/layout/AppSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { useGeneralState } from "@/contexts/GeneralAppStateContext";
@@ -8,7 +10,7 @@ import PhotoAiHeader from "@/components/layout/PhotoAiHeader";
 const PhotoAi = ({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) => {
   const { isSidebarOpen, setIsSidebarOpen } = useGeneralState();
 

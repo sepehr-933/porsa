@@ -2,7 +2,6 @@ import Chip from "@/components/common/Chip";
 import IconWrapper from "@/components/common/IconWrapper";
 
 import AiSearch from "@/assets/AiSearch.svg";
-import { SidebarTrigger } from "@/components/lib/shadcn/Sidebar";
 
 const AiChips = () => {
   return (

@@ -4,7 +4,7 @@ import HamburgerBarsIcon from "@/assets/HamburgurBars.svg";
 import EditIcon from "@/assets/models/Edit.svg";
 import IconWrapper from "@/components/common/IconWrapper";
 import { useGeneralState } from "@/contexts/GeneralAppStateContext";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const ModelsHeader = () => {

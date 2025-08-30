@@ -1,12 +1,9 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
+import { SidebarContextType } from "@/types/contexts";
 
-type SidebarContextType = {
-  isSidebarOpen: boolean;
-  setIsSidebarOpen: (value: boolean) => void;
-  toggleSidebar: () => void;
-};
+/* forced to create this context because shadcn ctx provider ruins the whole layout */
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
 
@@ -27,7 +24,7 @@ export const GeneralProvider = ({ children }: { children: ReactNode }) => {
 export const useGeneralState = (): SidebarContextType => {
   const context = useContext(SidebarContext);
   if (!context) {
-    throw new Error("useSidebar must be used within a GeneralProvider");
+    throw new Error("useGeneralState must be used within a GeneralProvider");
   }
   return context;
 };

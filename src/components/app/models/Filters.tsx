@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 import { useCallback, useState } from "react";
 
 type FiltersUnion = 0 | 1 | 2 | 3 | 4;
@@ -37,6 +37,7 @@ const Filters = () => {
     },
     [setActiveFilter],
   );
+
   return (
     <div className="flex justify-between gap-2 items-center w-full md:w-auto px-6 md:px-0 md:mr-6 mb-5.5 max-w-[361px]">
       {filterTitles.map((title) => (

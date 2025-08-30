@@ -4,7 +4,7 @@ import HamburgerBarsIcon from "@/assets/HamburgurBars.svg";
 import UserIcon from "@/assets/User.svg";
 import { useGeneralState } from "@/contexts/GeneralAppStateContext";
 import IconWrapper from "@/components/common/IconWrapper";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const HomeHeader = () => {

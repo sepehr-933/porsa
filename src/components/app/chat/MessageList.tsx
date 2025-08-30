@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/uiUtils";
 import { useMemo } from "react";
 import { UserRoles } from "@/constants/enumLikes";
 import UserMessage from "./UserMessage";
@@ -24,7 +24,7 @@ const messages = [
       "دلایل شخصی:\n" +
       "برای ارزیابی اثرات مصرف الکل توسط خود فرد.",
     key: "1",
-    imagesCount: 3,
+    imagesCount: 4,
   },
   { role: UserRoles.USER, text: "تست الکل", key: "" },
   {
